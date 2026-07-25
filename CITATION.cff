@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use the Witnessability Conceptual Core, cite this release."
+title: "Witnessability Conceptual Core 1.0"
+version: "1.0.0"
+date-released: "2026-07-25"
+authors:
+  - family-names: "Sergeev"
+    given-names: "Mikhail A."
+    orcid: "https://orcid.org/0009-0001-6443-855X"
+repository-code: "https://github.com/MikhailSergeev369/witnessability-core"
+url: "https://witnessability.io/core/1.0/"
+license: "CC-BY-4.0"

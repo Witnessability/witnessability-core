@@ -1,0 +1,11 @@
+{
+  "schema": "witnessability-errata-index",
+  "schema_version": "1.0",
+  "sequence": 1,
+  "release_index_ref": {
+    "path": "RELEASE-1.0-INDEX.json",
+    "sha256": "2a8ca133f852342d35d8897898f6b8c4b9c2d252022481283f615e4f0a074649"
+  },
+  "records": [],
+  "policy": "ERRATA-POLICY.md"
+}

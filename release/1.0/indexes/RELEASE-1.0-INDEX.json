@@ -1,0 +1,188 @@
+{
+  "schema": "witnessability-release-record",
+  "schema_version": "1.0",
+  "release_id": "witnessability-core-1.0",
+  "version": "1.0.0",
+  "status": "stable",
+  "tag_name": "v1.0.0",
+  "release_authority": {
+    "name": "Mikhail A. Sergeev",
+    "orcid": "0009-0001-6443-855X",
+    "openpgp_fingerprint": "95C4B50ED56544DC033B130DB84B6C860ABAD0B1",
+    "asset_set_decision": "RELEASE-AUTHORITY-DECISION-002.md"
+  },
+  "publication_asset_set": {
+    "authority": "RELEASE-AUTHORITY-DECISION-002.md",
+    "whitelist": "RELEASE-ASSET-WHITELIST.txt",
+    "asset_count": 20,
+    "ordering": "deterministic lexical basename order",
+    "checksum_manifest": "SHA256SUMS-PUBLICATION.txt",
+    "checksum_manifest_scope": "Exactly the other 18 approved assets; the manifest and its detached signature are excluded.",
+    "acyclic_integrity_order": [
+      "release-index input assets",
+      "RELEASE-1.0-INDEX.json",
+      "ERRATA-INDEX-0001.json and VERIFICATION-INDEX-0001.json",
+      "detached signatures of all three indexes",
+      "SHA256SUMS-PUBLICATION.txt",
+      "SHA256SUMS-PUBLICATION.txt.asc"
+    ]
+  },
+  "artifacts": [
+    {
+      "role": "apache_2_0_license_text",
+      "path": "Apache-2.0.txt",
+      "integrity_binding": "release_index_sha256",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "role": "cc_by_4_0_license_text",
+      "path": "CC-BY-4.0.txt",
+      "integrity_binding": "release_index_sha256",
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "role": "cc0_1_0_license_text",
+      "path": "CC0-1.0.txt",
+      "integrity_binding": "release_index_sha256",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "role": "errata_index",
+      "path": "ERRATA-INDEX-0001.json",
+      "integrity_binding": "publication_checksum_manifest"
+    },
+    {
+      "role": "errata_index_signature",
+      "path": "ERRATA-INDEX-0001.json.asc",
+      "integrity_binding": "publication_checksum_manifest",
+      "signature_of": "ERRATA-INDEX-0001.json"
+    },
+    {
+      "role": "errata_policy",
+      "path": "ERRATA-POLICY.md",
+      "integrity_binding": "release_index_sha256",
+      "sha256": "90e2a5c1887e72b5324f7069826fabfbc619ace9eb86b5a1a02eed886e70325b"
+    },
+    {
+      "role": "external_verification_guide",
+      "path": "EXTERNAL-VERIFICATION-GUIDE.md",
+      "integrity_binding": "release_index_sha256",
+      "sha256": "225ec85250cbc91cdbff9e62a0330bcec97ed991bec185311281f04072b8ab19"
+    },
+    {
+      "role": "license_grant",
+      "path": "LICENSE-GRANT-RECORD-CORE-1.0.md",
+      "integrity_binding": "release_index_sha256",
+      "sha256": "f7183b2367815e741edcdd13c4b4e5cf5f9c377822f14c9e2ea335396164429d"
+    },
+    {
+      "role": "license_grant_signature",
+      "path": "LICENSE-GRANT-RECORD-CORE-1.0.md.asc",
+      "integrity_binding": "release_index_sha256",
+      "signature_of": "LICENSE-GRANT-RECORD-CORE-1.0.md",
+      "sha256": "db12571e1a161781110b0d984b75d5bddf1a90e507c02c4e3a7c10d637103db7"
+    },
+    {
+      "role": "ratification_attestation",
+      "path": "RATIFICATION-ATTESTATION-FINAL.md",
+      "integrity_binding": "release_index_sha256",
+      "sha256": "7d7772adb887f0df0408b3c162bafb1010f84dac7f716fea451817628afe483c"
+    },
+    {
+      "role": "ratification_signature",
+      "path": "RATIFICATION-ATTESTATION-FINAL.md.asc",
+      "integrity_binding": "release_index_sha256",
+      "signature_of": "RATIFICATION-ATTESTATION-FINAL.md",
+      "sha256": "4235cb20eb9fe13cf8621509afefba74ef265618cdc8c107815580b219f87f97"
+    },
+    {
+      "role": "release_index",
+      "path": "RELEASE-1.0-INDEX.json",
+      "integrity_binding": "publication_checksum_manifest"
+    },
+    {
+      "role": "release_index_signature",
+      "path": "RELEASE-1.0-INDEX.json.asc",
+      "integrity_binding": "publication_checksum_manifest",
+      "signature_of": "RELEASE-1.0-INDEX.json"
+    },
+    {
+      "role": "release_authority_public_key",
+      "path": "RELEASE-AUTHORITY-PUBLIC-KEY.asc",
+      "integrity_binding": "release_index_sha256",
+      "sha256": "5f9a0ecdaf9925905397bc2289ea78abbac018e91da0cab39637d643e7b73115"
+    },
+    {
+      "role": "publication_checksum_manifest",
+      "path": "SHA256SUMS-PUBLICATION.txt",
+      "integrity_binding": "self_excluded_checksum_manifest"
+    },
+    {
+      "role": "publication_checksum_manifest_signature",
+      "path": "SHA256SUMS-PUBLICATION.txt.asc",
+      "integrity_binding": "detached_signature_of_checksum_manifest",
+      "signature_of": "SHA256SUMS-PUBLICATION.txt"
+    },
+    {
+      "role": "verification_index",
+      "path": "VERIFICATION-INDEX-0001.json",
+      "integrity_binding": "publication_checksum_manifest"
+    },
+    {
+      "role": "verification_index_signature",
+      "path": "VERIFICATION-INDEX-0001.json.asc",
+      "integrity_binding": "publication_checksum_manifest",
+      "signature_of": "VERIFICATION-INDEX-0001.json"
+    },
+    {
+      "role": "stable_core",
+      "path": "WITNESSABILITY-CORE-1.0.md",
+      "integrity_binding": "release_index_sha256",
+      "sha256": "382e39864e257d93a0afd16c377c54f59a2182ecc5c38178764ded29ffb3f034"
+    },
+    {
+      "role": "canonical_package",
+      "path": "Witnessability_Core_1.0_RC2_Ratification_Package_Final.zip",
+      "integrity_binding": "release_index_sha256",
+      "sha256": "9ab6071ee53354dacf9ad7377d5a3fc75dc6a4d310a131ca2335703d35a1b541",
+      "actual_regular_file_count": 53,
+      "manifest_covered_file_count": 52
+    }
+  ],
+  "licensing": {
+    "grant_record": {
+      "path": "LICENSE-GRANT-RECORD-CORE-1.0.md",
+      "signature_path": "LICENSE-GRANT-RECORD-CORE-1.0.md.asc",
+      "sha256": "f7183b2367815e741edcdd13c4b4e5cf5f9c377822f14c9e2ea335396164429d",
+      "signature_sha256": "db12571e1a161781110b0d984b75d5bddf1a90e507c02c4e3a7c10d637103db7"
+    },
+    "scopes": [
+      {
+        "scope": "WITNESSABILITY-CORE-1.0.md",
+        "sha256": "382e39864e257d93a0afd16c377c54f59a2182ecc5c38178764ded29ffb3f034",
+        "spdx_expression": "CC-BY-4.0",
+        "licensor": "Mikhail A. Sergeev",
+        "authorship_basis": "human-directed, AI-assisted/mixed"
+      },
+      {
+        "scope": "verify-release.sh within canonical package",
+        "sha256": "622b691b4eb37faa29f6533e550dee56c47f506e511f476937c02a0bf804341f",
+        "spdx_expression": "Apache-2.0",
+        "licensor": "Mikhail A. Sergeev — to extent rights subsist"
+      },
+      {
+        "scope": "remaining canonical package documentation and records",
+        "package_sha256": "9ab6071ee53354dacf9ad7377d5a3fc75dc6a4d310a131ca2335703d35a1b541",
+        "spdx_expression": "CC-BY-4.0",
+        "qualification": "Component rights are resolved through the preserved rights inventory, subject to its stated qualifications."
+      }
+    ],
+    "rights_qualification": "Grants apply only to extent rights subsist and are held or licensable by stated licensor; AI-assisted material may have limited, uncertain, absent, or not-assessed copyright."
+  },
+  "qualifications": [
+    "Self-authored first release profile and bootstrap premise are disclosed.",
+    "Independent-stranger conceptual validation remains open.",
+    "GitHub release attestation witnesses platform publication integrity, not conceptual truth or governance authority.",
+    "The release index enumerates all 20 approved basenames. Digests created after this index are bound by the signed publication checksum manifest without introducing a self-hash cycle."
+  ]
+}
